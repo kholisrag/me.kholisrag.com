@@ -734,7 +734,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Author config
 [author]
-  name = "Kholis RA Gumelar"
+  name = "Kholisrag"
   email = "me@kholisrag.com"
   link = "https://me.kholisrag.com/"
   avatar = ""
