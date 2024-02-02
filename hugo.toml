@@ -226,7 +226,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       social = true
       #  disclaimer (HTML format is supported)
       disclaimer = """\
-      Be Different So You Know What You Realy Are | \
+      Be Different So You Know What You Really Are | \
       Opinions expressed are solely my own and do not express anyone else’s view.\
       """
     # Home page posts
