@@ -447,7 +447,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Disqus comment config
       [params.page.comment.disqus]
         # 
-        enable = true
+        enable = false
         # Disqus shortname to use Disqus in posts
         shortname = "kholisrag"
       # Gitalk comment config
@@ -518,11 +518,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         enable = false
       #  Utterances comment config
       [params.page.comment.utterances]
-        enable = false
+        enable = true
         # owner/repo
-        repo = ""
+        repo = "kholisrag/me.kholisrag.com"
         issueTerm = "pathname"
-        label = ""
+        label = "blog-comments"
         lightTheme = "github-light"
         darkTheme = "github-dark"
       #  Twikoo comment config
