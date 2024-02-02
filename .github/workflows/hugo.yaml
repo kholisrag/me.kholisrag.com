@@ -32,7 +32,14 @@ jobs:
     runs-on: ubuntu-22.04
     env:
       HUGO_VERSION: 0.122.0
+      SOPS_VERSION: 3.8.1
+      SOPS_AGE_KEY: ${{ secrets.SOPS_AGE_KEY }}
     steps:
+      - name: Install SOPS
+        run: |
+          curl -LO https://github.com/getsops/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.linux.amd64
+          mv sops-v${SOPS_VERSION}.linux.amd64 /usr/local/bin/sops
+          chmod +x /usr/local/bin/sops
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
@@ -49,6 +56,10 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Decrypt secrets
+        run: |
+          sops -d secrets.enc.cfg > secrets.cfg
+          source secrets.cfg
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
