@@ -310,7 +310,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     QQ = ""
     QQGroup = ""
     Email = "me@kholisrag.com"
-    RSS = true # 
+    RSS = true #
 
   #  Page config
   [params.page]
@@ -446,13 +446,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       enable = true
       # Disqus comment config
       [params.page.comment.disqus]
-        # 
+        #
         enable = false
         # Disqus shortname to use Disqus in posts
         shortname = "kholisrag"
       # Gitalk comment config
       [params.page.comment.gitalk]
-        # 
+        #
         enable = false
         owner = ""
         repo = ""
@@ -481,7 +481,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         emoji = ""
       # Waline comment config
       [params.page.comment.waline]
-        # 
+        #
         enable = false
         serverURL = ""
         pageview = true
@@ -774,7 +774,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Options to make hugo output files
 [outputs]
-  # 
+  #
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
