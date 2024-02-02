@@ -1,0 +1,5 @@
+--container-architecture linux/amd64
+--artifact-server-path ./temp/artifacts
+-e .vscode/act-event.json
+-s SOPS_AGE_KEY
+-s GITHUB_TOKEN
