@@ -309,7 +309,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Linktree = ""
     QQ = ""
     QQGroup = ""
-    Email = "xxxx@xxxx.com"
+    Email = "me@kholisrag.com"
     RSS = true # 
 
   #  Page config
@@ -735,7 +735,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 # Author config
 [author]
   name = "Kholis RA Gumelar"
-  email = "agumgumelar0@gmail.com"
+  email = "me@kholisrag.com"
   link = "https://me.kholisrag.com/"
   avatar = ""
   gravatarEmail = "agumgumelar0@gmail.com"
