@@ -64,12 +64,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          sops -d secrets.enc.cfg > secrets.cfg
-          source secrets.cfg
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+          make render BASE_URL="${{ steps.pages.outputs.base_url }}"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
