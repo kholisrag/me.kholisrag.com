@@ -4,13 +4,14 @@ date: 2024-02-03T15:51:08+07:00
 draft: false
 ---
 
-Past, present and maybe tomorrow, We grow as human being, at least that's what I do and believe.
+In the past, present, and perhaps even the future, I firmly think that humankind evolves.
+As do I, Kholis Respati Agum Gumelar, or `kholis` as you may call me.
 
-Kholis Respati Agum Gumelar, or you can call me `kholis`. Myself, I had believe that until this point of my life journey. I had passionate, self-motivated, curiosity on IT Server World, from On-Premise to Public Cloud environment.
+I had believe that until this point of my life journey. I had passionate, self-motivated, curiosity on IT Server World, from On-Premise to Public Cloud environment.
 
-Most recently, I had deep curiosity on Cloud Infrastructure architecting, and solve complex problems with Automation.
+Most lately, I developed a keen interest in architecting complex cloud infrastructure and fully automating it from scratch.
 
-I got trust in my career journey on :
+I received confidence for my career path on:
 
-Initiate, Design, Architecting, and Deep Technical Implementation of many problems on Cloud Infrastructure, from Early Adoption, Scaling and Growing, and Edge Case + Complex Problems.
-From Cloud Infrastructure Architecting, Continuous Integration + Continuous Delivery (CI/CD), Observability and Monitoring, Developer Experience for debugging + troubleshooting, Infrastructure as Code (IaC), and Security.
+Initiate, Design, Architect, and Deep Technical Implementation of various Cloud Infrastructure issues, including Edge Case + Complex Problems, Scaling and Growing, and Early Adoption.
+From Observability and Monitoring, Infrastructure as Code (IaC), Cloud Infrastructure Architecting, Continuous Integration + Continuous Delivery (CI/CD), and Developer Experience for debugging + troubleshooting.
