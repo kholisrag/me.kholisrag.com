@@ -44,7 +44,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # title will be shown when you hover on this menu link
     title = "Home"
   [[menu.main]]
-    weight = 1
+    weight = 2
     identifier = "posts"
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
@@ -55,7 +55,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # title will be shown when you hover on this menu link
     title = "My Blog Posts"
   [[menu.main]]
-    weight = 2
+    weight = 3
     identifier = "about"
     pre = ""
     post = ""
@@ -779,7 +779,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
+  # taxonomyTerm = ["HTML"]
 
 # Options for taxonomies
 [taxonomies]
