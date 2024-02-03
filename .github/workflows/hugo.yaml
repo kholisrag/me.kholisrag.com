@@ -37,13 +37,13 @@ jobs:
     steps:
       - name: Install SOPS
         run: |
-          curl -LO https://github.com/getsops/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.linux.amd64
+          curl -sLO https://github.com/getsops/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.linux.amd64
           mv sops-v${SOPS_VERSION}.linux.amd64 /usr/local/bin/sops
           chmod +x /usr/local/bin/sops
       - name: Install Hugo CLI
         run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+          curl -sL -o ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+          sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Install Dart Sass
         if: ${{ !env.ACT }}
         run: sudo snap install dart-sass
@@ -65,9 +65,18 @@ jobs:
           HUGO_ENV: production
         run: |
           make render BASE_URL="${{ steps.pages.outputs.base_url }}"
-      - name: Upload artifact
+      - name: Upload Github Artifact
+        if: ${{ !env.ACT }}
         uses: actions/upload-pages-artifact@v3
         with:
+          path: ./public
+      # Workaround for https://github.com/nektos/act/issues/329
+      # Discussed in https://github.com/nektos/act/issues/2135
+      - name: Upload Local Artifact
+        if: ${{ env.ACT }}
+        uses: actions/upload-pages-artifact@v2
+        with:
+          name: public
           path: ./public
 
   # Deployment job
