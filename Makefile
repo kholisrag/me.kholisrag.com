@@ -24,6 +24,9 @@ local: decrypt
 
 render: decrypt
 	@echo "Rendering..."
+	@echo "Checking for HUGO_PARAMS_ANALYTICS_GOOGLE_ID and HUGO_PARAMS_ANALYTICS_CLOUDFLARE_TOKEN"
+	@ [ -z "$(HUGO_PARAMS_ANALYTICS_GOOGLE_ID)" ] && (echo "HUGO_PARAMS_ANALYTICS_GOOGLE_ID not set" && exit 1) || (echo "HUGO_PARAMS_ANALYTICS_GOOGLE_ID set")
+	@ [ -z "$(HUGO_PARAMS_ANALYTICS_CLOUDFLARE_TOKEN)" ] && (echo "HUGO_PARAMS_ANALYTICS_CLOUDFLARE_TOKEN not set" && exit 1) || (echo "HUGO_PARAMS_ANALYTICS_CLOUDFLARE_TOKEN set")
 	@echo "Base URL: $(BASE_URL)"
 	hugo \
 		--gc \
