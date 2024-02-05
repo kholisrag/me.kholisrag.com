@@ -46,7 +46,8 @@ jobs:
           sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Install Dart Sass
         if: ${{ !env.ACT }}
-        run: sudo snap install dart-sass
+        run: |
+          sudo snap install dart-sass || true
       - name: Checkout
         uses: actions/checkout@v4
         with:
