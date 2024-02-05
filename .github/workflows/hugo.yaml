@@ -75,7 +75,7 @@ jobs:
       # Discussed in https://github.com/nektos/act/issues/2135
       - name: Upload Local Artifact
         if: ${{ env.ACT }}
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           name: public
           path: ./public
