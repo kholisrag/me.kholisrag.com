@@ -15,8 +15,6 @@ decrypt:
 	@ [ -f secrets.enc.cfg ] || (echo "secrets.enc.cfg not found" && exit 1)
 	@echo "Decrypting secrets.enc.cfg"
 	@sops -d secrets.enc.cfg > ./secrets.cfg
-	@echo "Making secrets.cfg available to the environment variables"
-	@. ./secrets.cfg
 
 local: decrypt
 	@echo "Starting local server with drafts enabled and fast render disabled"
@@ -24,11 +22,8 @@ local: decrypt
 
 render: decrypt
 	@echo "Rendering..."
-	@echo "Checking for HUGO_PARAMS_ANALYTICS_GOOGLE_ID and HUGO_PARAMS_ANALYTICS_CLOUDFLARE_TOKEN"
-	@ [ -z "$(HUGO_PARAMS_ANALYTICS_GOOGLE_ID)" ] && (echo "HUGO_PARAMS_ANALYTICS_GOOGLE_ID not set" && exit 1) || (echo "HUGO_PARAMS_ANALYTICS_GOOGLE_ID set")
-	@ [ -z "$(HUGO_PARAMS_ANALYTICS_CLOUDFLARE_TOKEN)" ] && (echo "HUGO_PARAMS_ANALYTICS_CLOUDFLARE_TOKEN not set" && exit 1) || (echo "HUGO_PARAMS_ANALYTICS_CLOUDFLARE_TOKEN set")
 	@echo "Base URL: $(BASE_URL)"
-	hugo \
+	. ./secrets.cfg && hugo \
 		--gc \
 		--minify \
 		--baseURL "$(BASE_URL)"
