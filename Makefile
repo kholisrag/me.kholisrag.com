@@ -1,3 +1,4 @@
+SHELL = /bin/bash
 # by default: get the base url from the cname file with prefix https:// and suffix /
 BASE_URL = $(shell cat CNAME | sed 's/^/https:\/\//' | sed 's/$$/\//')
 
