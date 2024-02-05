@@ -605,8 +605,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       images = []
       # Publisher info
       [params.page.seo.publisher]
-        name = ""
-        logoUrl = ""
+        name = "Kholis Respati Agum Gumelar"
+        logoUrl = "https://me.kholisrag.com/kholisrag.jpg"
     #  Related content config
       [params.page.related]
         enable = true
