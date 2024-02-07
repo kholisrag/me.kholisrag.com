@@ -729,7 +729,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       unsafe = true
   # Table Of Contents settings
   [markup.tableOfContents]
-    startLevel = 1
+    startLevel = 2
     endLevel = 6
 
 # Author config
