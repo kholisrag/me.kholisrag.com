@@ -18,7 +18,7 @@ decrypt:
 
 local: decrypt
 	@echo "Starting local server with drafts enabled and fast render disabled"
-	hugo serve --disableFastRender --buildDrafts
+	. ./secrets.cfg && hugo serve --disableFastRender --buildDrafts
 
 render: decrypt
 	@echo "Rendering..."

@@ -1,0 +1,8 @@
+[extend]
+useDefault = true
+
+[allowlist]
+description = "allow for 2024_02_03_sops_age.md"
+paths = [
+  '''2024_02_03_sops_age.md'''
+]
