@@ -1,8 +1,2 @@
 [extend]
 useDefault = true
-
-[allowlist]
-description = "exclude list of files below from default rules"
-paths = [
-  '''2024_02_03_sops_age.md'''
-]
