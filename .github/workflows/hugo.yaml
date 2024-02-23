@@ -31,7 +31,7 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     env:
-      HUGO_VERSION: 0.123.1
+      HUGO_VERSION: 0.123.2
       SOPS_VERSION: 3.8.1
       SOPS_AGE_KEY: ${{ secrets.SOPS_AGE_KEY }}
     steps:
