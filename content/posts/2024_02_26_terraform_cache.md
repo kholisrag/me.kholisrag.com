@@ -21,9 +21,9 @@ As many already knows, `terraform` will download the provider binary from the in
 You guys simple create `.terraformrc` file in your home directory, and following line of code and create the cache dir, by:
 
 ```bash
-cat > ~/.terraformrc <<EOF
+cat > ~/.terraformrc <<OF
 plugin_cache_dir   = "$HOME/.terraform.d/plugin-cache"
-EOF
+OF
 
 mkdir -p ~/.terraform.d/plugin-cache
 ```
