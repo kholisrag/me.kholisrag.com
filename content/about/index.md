@@ -5,11 +5,11 @@ draft: false
 ---
 
 Humanity has undoubtedly evolved throughout history, the present, and possibly into the future.
-I, Kholis Respati Agum Gumelar, also go by the name 'kholis' for the sake of clarity, felt the evolution too.
+I, Kholis Respati Agum Gumelar, also go by the name 'kholis', felt the evolution too.
 
-I had held that conviction until this juncture in my life. I was enthusiastic, self-driven, and inquisitive regarding the IT server world, encompassing both On-Premise and Public Cloud (AWS, GCP) environments.
+I had held that conviction until this juncture in my life. I'm enthusiastic, self-driven, and inquisitive regarding the IT server world, encompassing both On-Premise and Public Cloud (AWS, GCP) environments.
 
-I have recently developed an interest in the conceptualization, design, implementation and full automation of complex cloud infrastructure.
+I have recently developed an interest in the design, implementation and full automation of complex infrastructure both On-Premise and Public Cloud.
 
 I obtained reassurance concerning my career trajectory through:
 
