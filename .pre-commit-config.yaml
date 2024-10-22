@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/compilerla/conventional-pre-commit
-    rev: v3.4.0
+    rev: v3.6.0
     hooks:
       - id: conventional-pre-commit
         stages: [commit-msg]
@@ -31,7 +31,7 @@ repos:
           - ".secrets.baseline"
 
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.20.1
+    rev: v8.21.1
     hooks:
       - id: gitleaks
 
