@@ -235,7 +235,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       #  disclaimer (HTML format is supported)
       disclaimer = """\
       Be Different So You Know What You Really Are | \
-      Opinions expressed are solely my own and do not express anyone else’s view.\
+      Opinions expressed are solely my own and do not express anyone else's view.\
       """
     # Home page posts
     [params.home.posts]
@@ -420,18 +420,18 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       Whatsapp = true
       Pinterest = false
       Tumblr = false
-      HackerNews = false
-      Reddit = false
+      HackerNews = true
+      Reddit = true
       VK = false
       Buffer = false
       Xing = false
-      Line = true
+      Line = false
       Instapaper = false
       Pocket = false
       Digg = false
       Stumbleupon = false
       Flipboard = false
-      Weibo = true
+      Weibo = false
       Renren = false
       Myspace = false
       Blogger = false
@@ -441,7 +441,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       Skype = false
       Trello = false
       Mix = false
-      Mastodon = false
+      Mastodon = true
 
     # instant.page config
     [params.page.instantpage]
