@@ -615,8 +615,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         logoUrl = "https://me.kholisrag.com/kholisrag.jpg"
     #  Related content config
       [params.page.related]
-        enable = true
-        count = 5
+        enable = false
+        count = 1
 
 
   #  Sponsor config
